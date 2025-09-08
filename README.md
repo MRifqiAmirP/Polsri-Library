@@ -14,12 +14,12 @@ Sebelum mulai, pastiin di laptop udah ada:
 
 ### 1. Clone Repo
 ```bash
-git clone https://github.com/username/nama-project.git
+git clone https://github.com/Hiddev666/Polsri-Library.git polsri-library
 ```
 
 ### 2. Masuk Folder Project
 ```bash
-cd nama-project
+cd polsri-library
 ```
 
 ### 3. Install Dependency
