@@ -8,5 +8,10 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/about', 'Home::about');
 
-// Admin
-$routes->get('/admin', 'Admin::index');
+// Admin Page
+$routes->get('/login', 'PageAdmin::login');
+$routes->get('/admin', 'PageAdmin::dashboard');
+
+
+// Login Controller
+$routes->post('/login', 'Login::auth');
