@@ -1,21 +1,22 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Auth;
 
 use App\Controllers\BaseController;
+use CodeIgniter\HTTP\ResponseInterface;
 
 class Login extends BaseController
 {
-    public function auth() {
+    public function auth()
+    {
         $nip = $this->request->getPost('nip');
         $password = $this->request->getPost('password');
 
-        if($nip === 'admin' && $password === 'password'){
+        if ($nip === 'admin' && $password === 'password') {
             return $this->response->setJSON([
                 'statusCode' => 200,
                 'status' => 'success',
-                'message' => 'Login berhasil!',
-                'redirect' => base_url('/admin')
+                'message' => 'Login berhasil!'
             ]);
         } else {
             return $this->response->setJSON([
@@ -24,5 +25,11 @@ class Login extends BaseController
                 'message' => 'NIP atau Password salah'
             ]);
         }
+    }
+
+    public function logout(): ResponseInterface
+    {
+        // Logic to handle user logout, e.g., destroying session
+        return redirect()->to(base_url('/login'));
     }
 }

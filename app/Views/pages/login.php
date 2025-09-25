@@ -377,7 +377,7 @@
 					Swal.fire({
 						icon: 'warning',
 						title: 'Password Kosong',
-						text: 'Masukkan username dan password untuk login.',
+						text: 'Masukkan NIP dan password untuk login.',
 						width: '50rem',
 						customClass: {
 							title: 'swal-title',
@@ -400,7 +400,7 @@
 				let result = await response.json();
 
 				if (result.statusCode === 200) {
-					window.location.href = result.redirect;
+					window.location.href = "<?= base_url('/admin'); ?>";
 				} else {
 					Swal.fire({
 						toast: true,

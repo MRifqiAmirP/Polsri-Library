@@ -1,11 +1,6 @@
 <!-- Ambil file layouts/main.php sebagai template -->
 <?= $this->extend('layouts/main') ?>
 
-<!-- Render title -->
-<?= $this->section('title') ?>
-Polsri Library
-<?= $this->endSection() ?>
-
 <!-- Render content yang akan dimasukkan ke tengah-tengah file layouts/main.php -->
 <?= $this->section('content') ?>
 <div class="w-md-12 h-md-12">

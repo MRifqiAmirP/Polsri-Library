@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Pages;
 
 use App\Controllers\BaseController;
 
-class PageAdmin extends BaseController
+class Admin extends BaseController
 {
     public function dashboard()
     {

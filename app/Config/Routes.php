@@ -9,9 +9,10 @@ $routes->get('/', 'Home::index');
 $routes->get('/about', 'Home::about');
 
 // Admin Page
-$routes->get('/login', 'PageAdmin::login');
-$routes->get('/admin', 'PageAdmin::dashboard');
+$routes->get('/login', 'Pages\Admin::login');
+$routes->get('/admin', 'Pages\Admin::dashboard');
 
 
-// Login Controller
-$routes->post('/login', 'Login::auth');
+// Auth Controller
+$routes->post('/login', 'Auth\Login::auth');
+$routes->get('/logout', 'Auth\Login::logout');
