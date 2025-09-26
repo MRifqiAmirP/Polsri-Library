@@ -45,7 +45,55 @@
             <b class="arrow"></b>
         </li>
 
-        <li class="">
+        <li class="<?= in_array(uri_string(), ['admin/bibliography', 'admin/bibliography/add']) ? 'open active' : ''; ?>">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-book"></i>
+                <span class="menu-text">Bibliography</span>
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li class="<?= in_array(uri_string(), ['admin/bibliography', 'admin/bibliography/add']) ? 'open active' : ''; ?>">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Bibliographic
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+
+                    <b class="arrow"></b>
+
+                    <ul class="submenu">
+                        <li class="<?= uri_string() === 'admin/bibliography' ? 'active' : ''; ?>">
+                            <a href="<?= base_url('admin/bibliography'); ?>">
+                                <i class="menu-icon fa fa-list-ul"></i>
+                                Bibliographic List
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+
+                        <li class="<?= uri_string() === 'admin/bibliography/add' ? 'active' : ''; ?>">
+                            <a href="<?= base_url('admin/bibliography/add'); ?>">
+                                <i class="menu-icon fa fa-plus-circle"></i>
+                                Add New Bibliographic
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="typography.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Typography
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+        <!-- <li class="">
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-desktop"></i>
                 <span class="menu-text">
@@ -241,7 +289,7 @@
                     </ul>
                 </li>
             </ul>
-        </li>
+        </li> -->
 
         <li class="">
             <a href="#" class="dropdown-toggle">

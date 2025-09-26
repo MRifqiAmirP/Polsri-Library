@@ -1,0 +1,31 @@
+/* Container tag */
+#form-field-tags + .tag-input {
+    display: flex;
+    flex-wrap: wrap;        /* pindah baris jika tag panjang */
+    align-items: center;
+    max-width: 100%;
+}
+
+/* Tag individual */
+#form-field-tags + .tag-input .tag {
+    max-width: 100%;
+    word-break: break-word; /* tag panjang dibungkus */
+    margin: 2px;
+    padding: 3px 6px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+/* Input internal */
+#form-field-tags + .tag-input input {
+    flex: 1 0 auto;         /* bisa mengecil dan membesar */
+    min-width: 50px;
+    margin: 2px;
+    padding: 3px;
+}
+
+#form-field-tags + .tag-input,
+#form-field-tags + .tag-input .tag,
+#form-field-tags + .tag-input input {
+    box-sizing: border-box;
+}

@@ -394,7 +394,8 @@
 			try {
 				let response = await fetch("<?= base_url('login'); ?>", {
 					method: "POST",
-					body: formData
+					body: formData,
+					credentials: 'same-origin'
 				});
 
 				let result = await response.json();

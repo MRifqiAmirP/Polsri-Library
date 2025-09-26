@@ -1,4 +1,4 @@
-<div id="navbar" class="navbar navbar-default          ace-save-state">
+<div id="navbar" class="navbar navbar-default ace-save-state">
     <div class="navbar-container ace-save-state" id="navbar-container">
         <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
             <span class="sr-only">Toggle sidebar</span>
@@ -278,7 +278,7 @@
 
                 <li class="light-blue dropdown-modal">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
+                        <img class="nav-user-photo" src="<?= base_url('assets/images/avatars/user.jpg'); ?>" alt="Jason's Photo" />
                         <span class="user-info">
                             <small>Welcome,</small>
                             Jason
